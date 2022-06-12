@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvEmi"
+    android:layout_marginBottom="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/emiRl"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+       <TableRow
+           android:layout_height="45dp"
+           android:layout_width="wrap_content">
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:text="1"
+               android:id="@+id/emisrNo"
+               android:textSize="20dp"
+               android:layout_marginLeft="5dp"
+               android:textColor="@color/black"
+               android:fontFamily="@font/robotoregular"/>
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:text="Date"
+               android:layout_marginLeft="40dp"
+               android:id="@+id/emiDate"
+               android:textSize="20dp"
+               android:textColor="@color/black"
+               android:fontFamily="@font/robotoregular"/>
+           <TextView
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:text="Amount"
+               android:layout_marginLeft="20dp"
+               android:id="@+id/emiAmount"
+               android:textSize="20dp"
+               android:textColor="@color/black"
+               android:fontFamily="@font/robotoregular"/>
+
+           <Button
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:id="@+id/emiStatus"
+               android:layout_marginLeft="25dp"
+               android:background="@drawable/button_bg_round"
+               android:textSize="20dp"
+               android:textColor="@color/white"
+
+               android:fontFamily="@font/robotoregular"/>
+       </TableRow>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

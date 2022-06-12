@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Toolbar
+        android:id="@+id/toolbarEmi"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/noEmi"
+        android:text="No EMI"
+        android:background="@color/gray"
+        android:fontFamily="@font/robotoblack"
+        android:textSize="20dp"
+        android:textColor="@color/red_color_picker"
+        android:gravity="center"/>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_marginTop="90dp">
+        <TextView
+            android:fontFamily="@font/robotoregular"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=" Sr. No"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+        <TextView
+            android:fontFamily="@font/robotoregular"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Date"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:fontFamily="@font/robotoregular"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="EMI"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:fontFamily="@font/robotoregular"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Status"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+    </TableRow>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_emi_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbarEmi"
+        android:layout_marginTop="65dp" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtInstallment_No"
+        android:layout_width="85dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="installment_no"
+        android:textColor="#616161"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtMovieName"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="@string/item_namelot_of_so_somany_names_that_appear_to_be_there_is_no_there_is_no_way"
+        android:textColor="#616161"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtYear"
+        android:layout_width="124dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="@string/year"
+        android:textColor="#546E7A"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="@drawable/table_content_cell_bg"
+        android:text="@string/balance"
+
+        android:textSize="18sp"
+         />
+
+</LinearLayout>

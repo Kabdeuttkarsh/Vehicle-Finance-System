@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/card_view"
+android:layout_margin="5dp"
+android:layout_width="match_parent"
+card_view:contentPadding="8dp"
+card_view:cardElevation="8dp"
+android:layout_height="430dp"
+card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+            <TextView
+                android:fontFamily="@font/robotoblack"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:background="@color/gray"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Loans"/>
+            <TextView
+                android:fontFamily="@font/robotoblack"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loanType"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="No Loans"/>
+
+            <TextView
+                android:fontFamily="@font/robotoregular"
+                android:text="Loan Amount"
+                android:textSize="14dp"
+                android:background="@color/gray"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:fontFamily="@font/robotoblack"
+                android:text="Loan Amount: "
+                android:id="@+id/loanAmount"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:text="AMOUNT PAID: "
+                android:textSize="13dp"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:fontFamily="@font/robotoblack"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="AMOUNT PAID: "
+                android:id="@+id/amountPaid"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/black"
+                android:text="AMOUNT REMAINING: "
+                android:background="@color/gray"
+                android:textSize="13dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:fontFamily="@font/robotoblack"
+                android:textColor="@color/colorPrimary"
+                android:text="AMOUNT REMAINING: "
+                android:id="@+id/amountRemaining"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:fontFamily="@font/robotoregular"
+                android:text="TOTAL DUE: "
+                android:background="@color/gray"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TextView
+                android:fontFamily="@font/robotoblack"
+                android:text="TOTAL DUE: "
+                android:id="@+id/totalDue"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical">
+            <TextView
+                android:fontFamily="@font/robotoblack"
+                android:text="Approved Status: "
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:singleLine="true" />
+                <TextView
+                    android:fontFamily="@font/robotoblack"
+                    android:text="TOTAL DUE "
+                    android:id="@+id/approvedStatus"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:singleLine="true" />
+            </TableRow>
+        <TableRow
+            android:layout_height="75dp"
+            android:layout_width="match_parent"
+            android:gravity="center">
+            <Button
+                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/button_bg_round_nobg"
+                android:textColor="#FFF"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:text="Pay"
+                android:visibility="gone"
+                android:lines="1"
+                android:id="@+id/idpayEMI"/>
+            <Button android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/button_bg_round_nobg"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:text=" Transactions "
+                android:lines="1"
+                android:id="@+id/idTransactions"/>
+            <Button android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/button_bg_round_nobg"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:text="EMI"
+                android:lines="1"
+                android:id="@+id/idEmiSchedule"/>
+        </TableRow>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+

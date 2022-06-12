@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.home.HomeFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.gallery.GalleryFragment"
+        android:label="@string/menu_requestloan"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.slideshow.SlideshowFragment"
+        android:label="@string/menu_paymyloans"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.tools.ToolsFragment"
+        android:label="@string/menu_requeststatus"
+        tools:layout="@layout/fragemnt_request" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.share.ShareFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/bottom_home"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/bottom_dashboard"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.DashboardFragment"
+        android:label="@string/title_payment"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/bottom_notifications"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.notifications.NotificationFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/emi_calculators"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.emi.EmiFragment"
+        android:label="Emi Calculator"
+        tools:layout="@layout/fragment_emi"/>
+
+    <fragment
+        android:id="@+id/document_fragment"
+        android:name="com.solutionstouch.omsaifinance.ui.dashboard.documents.DocumentFragment"
+        android:label="My Documents"
+        tools:layout="@layout/fragment_document"/>
+
+
+
+</navigation>
